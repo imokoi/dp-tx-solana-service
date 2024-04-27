@@ -23,10 +23,6 @@ async def connect_ws():
         # 发送订阅请求
         await websocket.send(json.dumps(subscribe_message))
 
-        # 接收响应以确认订阅
-        response = await websocket.recv()
-        print(f"Subscription response: {response}")
-
         # 循环接收日志消息
         try:
             while True:
