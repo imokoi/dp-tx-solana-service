@@ -3,4 +3,10 @@
         "SOLANA",
         "websockets"
     ],
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportMissingModuleSource": "none"
+    },
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "${workspaceFolder}/"
+    }
 }
