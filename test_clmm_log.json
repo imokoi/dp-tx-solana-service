@@ -1,0 +1,34 @@
+{
+    "jsonrpc": "2.0",
+    "method": "logsNotification",
+    "params": {
+        "result": {
+            "context": {
+                "slot": 294938858
+            },
+            "value": {
+                "signature": "63H6V1tSQuwDF1gNsvYBiQuX4uFuBpU2gFxwoJJNHgjeP2uQJbQ5dW8ZwmjctN6kDSLNC8mnpTFo8fzwYT3C8Csf",
+                "err": null,
+                "logs": [
+                    "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+                    "Program ComputeBudget111111111111111111111111111111 success",
+                    "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+                    "Program ComputeBudget111111111111111111111111111111 success",
+                    "Program 11111111111111111111111111111111 invoke [1]",
+                    "Program 11111111111111111111111111111111 success",
+                    "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK invoke [1]",
+                    "Program log: Instruction: CreatePool",
+                    "Program 11111111111111111111111111111111 invoke [2]",
+                    "Program 11111111111111111111111111111111 success",
+                    "Program 11111111111111111111111111111111 invoke [2]",
+                    "Program 11111111111111111111111111111111 success",
+                    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+                    "Program log: Instruction: InitializeAccount3",
+                    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4188 of 578496 compute units",
+                    "Program log: Instruction: InitializeAccount3"
+                ]
+            }
+        },
+        "subscription": 1369206
+    }
+}

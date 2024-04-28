@@ -1,7 +1,8 @@
 from inspect import signature
+import json
 from app.amm import parse_amm_v4_transaction
-from app.clmm import parse_clmm_transaction
-from app.transaction import process_logs
+from app.clmm import parse_clmm_transaction, pick_clmm_create_pool_instruction_log
+from app.solana_log import process_logs
 import pytest
 
 # from app.transaction.parser import analyze_solana_logs
@@ -33,3 +34,15 @@ async def test_parse_amm_v4_transaction():
 async def test_parse_clmm_transaction():
     signature = "63H6V1tSQuwDF1gNsvYBiQuX4uFuBpU2gFxwoJJNHgjeP2uQJbQ5dW8ZwmjctN6kDSLNC8mnpTFo8fzwYT3C8Csf"
     await parse_clmm_transaction(signature)
+
+
+@pytest.mark.asyncio
+async def test_pick_clmm_create_pool_logs():
+    # 读取 json 文件
+    with open("./test_clmm_log.json", "r") as f:
+        message = f.read()
+        message_dict = json.loads(message)
+        # print(message)
+        logs = message_dict["params"]["result"]["value"]["logs"]
+        signature = message_dict["params"]["result"]["value"]["signature"]
+        await pick_clmm_create_pool_instruction_log(signature, logs)

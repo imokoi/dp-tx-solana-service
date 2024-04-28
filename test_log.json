@@ -8,7 +8,7 @@
             },
             "value": {
                 "signature": "5WXz8C15zkXsLtihXaAYHUyg7UtuFYZDVu7CzS8aWq1k3BREphkxBKTSDc3ZQ7GxgUMKQQbPQhUtiTC9DTM2cPVM",
-                "err": null,
+                "err": "some error",
                 "logs": [
                     "Program ComputeBudget111111111111111111111111111111 invoke [1]",
                     "Program ComputeBudget111111111111111111111111111111 success",
